@@ -1,0 +1,45 @@
+
+<html>
+
+<body>
+
+<head>
+<title>Checksum</title>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align:right;
+   background-color:white;	
+}
+</style>
+</head>
+<center>
+<button type="button" onClick="parent.location='crc.html'" style="float:right;background-color:#4BCA36;color:white">Go to CRC</button>
+<h1>Checksum</h1>
+
+<h2 style="color:blue">Sender Side Check</h2>
+<label for="lname">DATA:</label>
+<input type="text" id="data"><br><br>
+<button type="button" onclick="checksum(document.getElementById('data').value)">CALCULATE</button>
+<h4 id="output"></h4>
+
+<h2 style="color:blue">Reciever Side Check</h2>
+<label for="lname">DATA BIT:</label>
+<input type="text" id="rdata"><br><br>
+<label for="lname">REDUNDANCY BIT:</label>
+<input type="text" id="rbdata"><br><br>
+<button type="button" onclick="rchecksum(document.getElementById('rdata').value,document.getElementById('rbdata').value)">CALCULATE</button>
+<h4 id="routput"></h4>
+</center>
+<script src="checksum.js"></script>
+
+<div class="footer">
+  <p><i><b>VIGNESH A S</b><br>
+  DEPARTMENT OF INFORMATION TECHNOLOGY</i></p>
+</div>
+</body>
+
+</html>

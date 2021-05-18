@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cyclic Redundancy Check</title>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align:right;
+   background-color:white;	
+}
+</style>
+</head>
+<body>
+
+
+<center>
+<button type="button" onClick="parent.location='checksum.html'" style="float:right;background-color:#4BCA36;color:white">Go to CheckSum</button>
+<h1>Cyclic Redundancy Check</h1>
+<h2 style="color:blue">Sender Side check</h2>
+<label for="fname">DATAWORD  :</label>
+<input type="text" id="data"><br><br>
+<label for="lname">GENERATOR:</label>
+<input type="text" id="gen"><br><br>
+<button type="button" onclick="CRC()">CHECK</button>
+<h4 id="output"></h4>
+
+<h2 style="color:blue">Reciever Side check</h2>
+<label for="fname">CODEWORD RECIEVED :</label>
+<input type="text" id="cdata"><br><br>
+<label for="lname">GENERATOR         :</label>
+<input type="text" id="cgen"><br><br>
+<button type="button" onclick="RCRC()">CHECK</button>
+<h4 id="routput"></h4>
+</center>
+<div class="footer">
+  <p><i><b>VIGNESH A S</b><br>
+  DEPARTMENT OF INFORMATION TECHNOLOGY</i></p>
+</div>
+<script src="crc.js"></script>
+</body>
+</html>
